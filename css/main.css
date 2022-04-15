@@ -328,6 +328,7 @@ header .container .icon i {
   }
   .serv-content .serv i {
     margin-bottom: 30px;
+    margin-right: 0;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -975,6 +976,7 @@ footer::before {
       margin-bottom: 0;
       margin-bottom: 30px;
       text-align: center;
+      margin-left: 0;
     }
   }
  /* end contact us  */
