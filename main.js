@@ -3,7 +3,7 @@ let mySpan = document.querySelectorAll(".progre");
 let started = false;
 
 window.addEventListener("scroll" , () => {
-  if (window.scrollY >= stat.offsetTop) {
+  if (window.scrollY >= stat.offsetTop - 200) {
     if (!started) {
       mySpan.forEach(el => startCount(el));
     }
