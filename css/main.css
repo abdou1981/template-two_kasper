@@ -725,6 +725,7 @@ footer::before {
   position: absolute;
   height: 100%;
   background-color: var(--main-color);
+  transition: width 0.5s linear;
 }
 .prog-holder span::before {
   content: attr(data-progress);

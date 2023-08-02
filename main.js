@@ -1,3 +1,4 @@
+//progress number
 let stat = document.querySelector(".stats");
 let mySpan = document.querySelectorAll(".progre");
 let started = false;
@@ -20,3 +21,15 @@ function startCount(el) {
     };
   }, 7500 / goal)
 };
+
+//progress skilles
+let skills = document.querySelector(".skills");
+let spans = document.querySelectorAll(".prog span");
+
+window.addEventListener("scroll", function() {
+  if (window.scrollY >= skills.offsetTop) {
+    spans.forEach(span => {
+      span.style.width = span.dataset.progress;
+    })
+  }
+})
